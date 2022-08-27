@@ -5,8 +5,9 @@
 <script>
         function sample(){
 
-            // getting err in parsing json, so tried with sample data
-
+            // getting err in parsing json, so tried with this sample data
+            // before I parsed json from HTTP response
+            
             const text = '{ "allData" : [' +
                 '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.5,"Owner": "sankar","Team": "Design","BillingStatus": "Billable" },' +
                 '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.42,"Owner": "Madhavan","Team": "Design","BillingStatus": "Billable" },' +
@@ -18,8 +19,9 @@
                 '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.22,"Owner": "Doe","Team": "Design","BillingStatus": "Billable" },' +
                 '{ "Date": "17-02-2015","ProjectName": "BBB","Hours": 0.23,"Owner": "John","Team": "Dev","BillingStatus": "Billable" } ]}'; 
             
-            let a = [], b=[];
+            let a = [];
             let obj = JSON.parse(text);
+            var avg = 0;
             
             for (let i = 0; i<= text.length; i++) {
                 for (let j = 0; j<= i; j++) {
@@ -33,6 +35,10 @@
                     let hours1 = obj.allData[j].Hours;
                     let team1 = obj.allData[j].Team;
 
+                    // if ( Project == Project1 || Project1 == Project ) {
+                    //     avg += hours;
+                    //     document.writeln(avg);
+                    // }
 
                     // prints least 5 people who worked least hours
 
