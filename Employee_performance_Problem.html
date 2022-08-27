@@ -9,14 +9,14 @@
 
             const text = '{ "allData" : [' +
                 '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.5,"Owner": "sankar","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.42,"Owner": "sdcs","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.55,"Owner": "sankar","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.25,"Owner": "sdcs","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.35,"Owner": "sankar","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.62,"Owner": "sdcs","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.75,"Owner": "sankar","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.22,"Owner": "sdcs","Team": "Design","BillingStatus": "Billable" },' +
-                '{ "Date": "17-02-2015","ProjectName": "BBB","Hours": 0.23,"Owner": "anumothu","Team": "Dev","BillingStatus": "Billable" } ]}'; 
+                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.42,"Owner": "Madhavan","Team": "Design","BillingStatus": "Billable" },' +
+                '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.55,"Owner": "Ajay","Team": "Design","BillingStatus": "Billable" },' +
+                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.25,"Owner": "Kanna","Team": "Design","BillingStatus": "Billable" },' +
+                '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.35,"Owner": "Sid","Team": "Design","BillingStatus": "Billable" },' +
+                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.62,"Owner": "Maran","Team": "Design","BillingStatus": "Billable" },' +
+                '{ "Date": "23-02-2015", "ProjectName": "AAA ","Hours": 0.75,"Owner": "David","Team": "Design","BillingStatus": "Billable" },' +
+                '{ "Date": "18-02-2015","ProjectName": "AAA ","Hours": 0.22,"Owner": "Doe","Team": "Design","BillingStatus": "Billable" },' +
+                '{ "Date": "17-02-2015","ProjectName": "BBB","Hours": 0.23,"Owner": "John","Team": "Dev","BillingStatus": "Billable" } ]}'; 
             
             let a = [], b=[];
             let obj = JSON.parse(text);
@@ -39,11 +39,11 @@
                     if ( hours < hours1 || hours1 < hours ) {
                         a.push(name);
                         if(a.length == 5){
-                            console.log(a[0]);
-                            console.log(a[1]);
-                            console.log(a[2]);
-                            console.log(a[3]);
-                            console.log(a[4]);
+                            document.writeln(a[0]);
+                            document.writeln(a[1]);
+                            document.writeln(a[2]);
+                            document.writeln(a[3]);
+                            document.writeln(a[4]);
                         }
                     }
 
