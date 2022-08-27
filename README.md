@@ -1,5 +1,5 @@
 # Employee_Performance_Problem
-
+Did only one part - 5 Employees with the lowest efficiency<br>
 1 - Just creat a HTML file and paste this code <br>
 2 - Double click and open the file in browser <br>
 3 - Click the sample name on the screen <br>
